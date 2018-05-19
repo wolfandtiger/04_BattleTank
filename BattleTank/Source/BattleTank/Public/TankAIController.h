@@ -5,7 +5,7 @@
 #include "AIController.h"
 #include "TankAIController.generated.h"
 
-class ATank;
+
 
 /**
 *
@@ -20,7 +20,5 @@ private:
 
 	virtual void Tick(float DeltaSeconds) override;
 
-	ATank* GetControlledTank() const;
-
-	ATank* GetPlayerTank() const;
+	float AcceptanceRadius = 3000;
 };
